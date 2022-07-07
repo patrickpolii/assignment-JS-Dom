@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+         <!-- Bootstrap CSS -->
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+  />
+    </head>
+    <body>
+      <div class="container">
+        <div class="row justify-content-md-center mt-5 mb-5">
+          <div class="col col-lg-2"></div>
+          <div class="col-md-auto text-center">
+            <h1>Javascript Mini Project DOM</h1>
+            <h6>
+              <span class="badge badge-success">Beginner</span>
+            </h6>
+          </div>
+          <div class="col col-lg-2"></div>
+        </div>
+      </div>
+      <div class="container p-0">
+        <div class="card text-center bg-dark rounded-0">
+          <h5 class="card-header text-white">
+            Add your data here
+          </h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="nama">Nama</label>
+                        <input type="text" class="form-control" id="nama">
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="alamat">Address</label>
+                        <textarea class="form-control" id="address" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="hp">Phone Number</label>
+                        <input type="number" class="form-control" id="phone">
+                    </div>
+                    <div class="input-group mb-3">
+                      <label class="input-group-text" for="hp">Email</label>
+                      <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="backend" value="backend">
+                      <label class="form-check-label" for="inlineCheckbox1">BackEnd</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="frontend" value="frontend">
+                      <label class="form-check-label" for="inlineCheckbox2">FrontEnd</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="fullstack" value="fullstack">
+                      <label class="form-check-label" for="inlineCheckbox3">Fullstack</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="mobile" value="mobile">
+                      <label class="form-check-label" for="inlineCheckbox3">Mobile</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="iot" value="iot">
+                      <label class="form-check-label" for="inlineCheckbox3">IoT</label>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center mt-5 mb-5">
+                  <div class="col-md-auto text-center">
+                    <div class="input-group mb-3">
+                      <button type="submit" class="btn btn-primary mb-3" id="submit">Submit</button>
+                    </div>
+                  </div>
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Address</th>
+                              <th scope="col">Phone Number</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Category</th>
+                            </tr>
+                          </thead>
+                          <tbody id="tableContent">
+                            <!-- <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr> -->
+                          </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    <script src="app.js"></script>
+    </body>
+</html>
